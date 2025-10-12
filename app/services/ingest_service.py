@@ -1,5 +1,3 @@
-# app/services/ingest_service.py
-
 import pandas as pd
 import numpy as np
 import os
@@ -32,7 +30,7 @@ def _process_single_file(file_path: str) -> pd.DataFrame:
     try:
         df = pd.read_csv(file_path, skiprows=8, delimiter=';', encoding='latin-1', decimal=',')
         
-        # Eu vi que muitos arquivos termina com uma linha vazia.
+        # Eu vi que muitos arquivos terminam com uma linha vazia.
         # ao invés de tirar manualmente, isso limpa a linha final que não agrega nada ao sistema
         if df.iloc[:, -1].isnull().all():
             df = df.iloc[:, :-1]
@@ -56,7 +54,7 @@ def _process_single_file(file_path: str) -> pd.DataFrame:
     # ou foram invalidados são registrados como "-9999" -> só vamos
     # automatizar a limpeza aqui.
     df_clean.replace(-9999, np.nan, inplace=True)
-    df_clean['precipitacao_mm'].fillna(0, inplace=True)
+    df_clean['precipitacao_mm'] = df_clean['precipitacao_mm'].fillna(0)
     df_clean['data'] = pd.to_datetime(df_clean['data'])
     df_clean['precipitacao_mm'] = pd.to_numeric(df_clean['precipitacao_mm'])
 

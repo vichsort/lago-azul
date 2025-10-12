@@ -1,0 +1,94 @@
+{
+    "city": "CURITIBANOS",
+    "temporal_serie_historical": [
+        "2008-02-01T00:00:00",
+        "2018-12-01T00:00:00"
+    ],
+    "forecast": [
+        {
+            "date": "2019-01-01T00:00:00",
+            "predicted_mm": 123.3223239424936,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 306.2687931044296,
+            "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2019-02-01T00:00:00",
+            "predicted_mm": 75.55424912590333,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 259.7528259465483,
+            "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2019-03-01T00:00:00",
+            "predicted_mm": 74.7535185970228,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 260.1957490265634,
+            "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2019-04-01T00:00:00",
+            "predicted_mm": 31.69665124237758,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 218.37425019472818,
+            "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2019-05-01T00:00:00",
+            "predicted_mm": 73.2462359779756,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 261.1510817764447,
+            "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2019-06-01T00:00:00",
+            "predicted_mm": 0.0,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 188.3068121163081,
+            "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2019-07-01T00:00:00",
+            "predicted_mm": 0.0,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 167.58114285428144,
+            "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2019-08-01T00:00:00",
+            "predicted_mm": 76.35051773877647,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 267.8899299920824,
+            "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2019-09-01T00:00:00",
+            "predicted_mm": 58.39409463831842,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 251.1297985706041,
+            "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2019-10-01T00:00:00",
+            "predicted_mm": 154.24178364852077,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 348.1663996574366,
+            "tendencia": "Dentro da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2019-11-01T00:00:00",
+            "predicted_mm": 86.79126206460016,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 281.89754545428826,
+            "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2019-12-01T00:00:00",
+            "predicted_mm": 71.38746817968148,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 267.66830509981764,
+            "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
+        }
+    ],
+    "generated_at": "2025-10-12T13:32:35.033339"
+}
