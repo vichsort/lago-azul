@@ -24,10 +24,11 @@ Este projeto é uma API backend completa para a ingestão, armazenamento, análi
 ## 🛠️ Tecnologias Utilizadas
 
   * **Backend:** Python 3.11+, Flask
+  * **Frontend:** Vue.js 3.5+, D3.js 
   * **Banco de Dados:** PostgreSQL
   * **ORM e Migrações:** Flask-SQLAlchemy, Flask-Migrate (Alembic)
   * **Manipulação de Dados:** Pandas, NumPy
-  * **Modelo Estatístico:** Statsmodels, Pmdarima (auto\_arima)
+  * **Modelo Estatístico:** Statsmodels, Pmdarima (auto\_arima) (SARIMA)
   * **Ambiente e Dependências:** Python venv, Pip
 
 ## 📁 Estrutura do Projeto
@@ -108,6 +109,9 @@ DB_NAME="pluviometric_data"
 c. **Crie e ative o ambiente virtual:**
 
 ```bash
+# Entrar na pasta do backend
+cd backend
+
 # Criar o ambiente
 python -m venv .venv
 
@@ -169,12 +173,17 @@ curl -X POST http://127.0.0.1:5000/api/v1/forecast/by-city/NOME_DA_CIDADE
 Para visualizar usando um sistema dashboard frontend, abra a pasta 'frontend' e execute os seguintes comandos:
 
 ```sh
+# Entrar na pasta do backend
+cd frontend
+
+# Instalar as dependências via node package manager
 npm install
 ```
 
 Para instalar as dependências do sistema, e
 
 ```sh
+# Rodar em modo de desenvolvimento o sistema
 npm run dev
 ```
 
