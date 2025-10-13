@@ -164,6 +164,23 @@ flask generate-forecast "NOME_DA_CIDADE"
 curl -X POST http://127.0.0.1:5000/api/v1/forecast/by-city/NOME_DA_CIDADE
 ```
 
+### 4\. Painel frontend
+
+Para visualizar usando um sistema dashboard frontend, abra a pasta 'frontend' e execute os seguintes comandos:
+
+```sh
+npm install
+```
+
+Para instalar as dependências do sistema, e
+
+```sh
+npm run dev
+```
+
+Para rodar a aplicação. Simples assim, o sistema estará rodando em `http://localhost:5173/`. Abrir o navegador neste endereço irá lhe direcionar ao dashboard de análise pluviométrica. 
+
+
 ## 📋 Documentação da API
 
 Todos os endpoints estão disponíveis sob o prefixo `/api/v1`.
