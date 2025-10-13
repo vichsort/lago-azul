@@ -122,7 +122,6 @@ watch(() => props.data, drawChart, { deep: true });
 .chart-container {
   width: 100%;
   height: 100%;
-  min-height: 400px; /* Garante uma altura mínima */
   flex-grow: 1;
 }
 

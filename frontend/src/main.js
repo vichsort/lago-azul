@@ -11,7 +11,7 @@ import ForecastBuilder from './components/ForecastBuilder.vue'
 const routes = [
   { path: '/', component: HomePage }, 
     {
-    path: '/builder', // 2. Defina o caminho para a nova página
+    path: '/forecast', // 2. Defina o caminho para a nova página
     name: 'ForecastBuilder',
     component: ForecastBuilder
   }

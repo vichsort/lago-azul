@@ -1,0 +1,94 @@
+{
+    "city": "NaN",
+    "temporal_serie_historical": [
+        "2019-01-01T00:00:00",
+        "2024-12-01T00:00:00"
+    ],
+    "forecast": [
+        {
+            "date": "2025-01-01T00:00:00",
+            "predicted_mm": 4366.896885324432,
+            "conf_int_lower": 1062.1190240487426,
+            "conf_int_upper": 7671.674746600122,
+            "tendencia": "Dentro da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2025-02-01T00:00:00",
+            "predicted_mm": 3418.4187569516325,
+            "conf_int_lower": 19.5887347814205,
+            "conf_int_upper": 6817.248779121845,
+            "tendencia": "Dentro da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2025-03-01T00:00:00",
+            "predicted_mm": 3999.3584784819595,
+            "conf_int_lower": 509.00973848000876,
+            "conf_int_upper": 7489.707218483911,
+            "tendencia": "Acima da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2025-04-01T00:00:00",
+            "predicted_mm": 3039.849865092266,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 6619.378204700831,
+            "tendencia": "Acima da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2025-05-01T00:00:00",
+            "predicted_mm": 3428.349526881743,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 7094.889031822127,
+            "tendencia": "Dentro da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2025-06-01T00:00:00",
+            "predicted_mm": 2968.742856295554,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 6720.275976036885,
+            "tendencia": "Dentro da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2025-07-01T00:00:00",
+            "predicted_mm": 2815.883911730252,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 6650.527253130306,
+            "tendencia": "Acima da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2025-08-01T00:00:00",
+            "predicted_mm": 2437.004560756213,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 6352.994647946349,
+            "tendencia": "Acima da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2025-09-01T00:00:00",
+            "predicted_mm": 3166.9946829393757,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 7162.67574756391,
+            "tendencia": "Acima da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2025-10-01T00:00:00",
+            "predicted_mm": 6687.761524432208,
+            "conf_int_lower": 2613.948080320329,
+            "conf_int_upper": 10761.574968544086,
+            "tendencia": "Acima da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2025-11-01T00:00:00",
+            "predicted_mm": 5429.2303224553325,
+            "conf_int_lower": 1278.755074407909,
+            "conf_int_upper": 9579.705570502756,
+            "tendencia": "Acima da m\u00e9dia hist\u00f3rica"
+        },
+        {
+            "date": "2025-12-01T00:00:00",
+            "predicted_mm": 4065.9212340873864,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 8291.667747057843,
+            "tendencia": "Acima da m\u00e9dia hist\u00f3rica"
+        }
+    ],
+    "generated_at": "2025-10-13T20:28:41.748260"
+}

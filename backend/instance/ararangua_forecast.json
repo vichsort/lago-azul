@@ -1,5 +1,5 @@
 {
-    "city": "FLORIANOPOLIS",
+    "city": "ARARANGUA",
     "temporal_serie_historical": [
         "2009-01-01T00:00:00",
         "2018-12-01T00:00:00"
@@ -7,88 +7,88 @@
     "forecast": [
         {
             "date": "2019-01-01T00:00:00",
-            "predicted_mm": 243.6462271910367,
-            "conf_int_lower": 66.91205828283773,
-            "conf_int_upper": 420.38039609923567,
-            "tendencia": "Dentro da m\u00e9dia hist\u00f3rica"
+            "predicted_mm": 97.5202662776154,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 295.2107864016632,
+            "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
         },
         {
             "date": "2019-02-01T00:00:00",
-            "predicted_mm": 139.33765887193417,
+            "predicted_mm": 99.60152673363689,
             "conf_int_lower": 0.0,
-            "conf_int_upper": 316.83243518178756,
+            "conf_int_upper": 322.9031544732818,
             "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
         },
         {
             "date": "2019-03-01T00:00:00",
-            "predicted_mm": 233.2123123490655,
-            "conf_int_lower": 55.27668547611901,
-            "conf_int_upper": 411.14793922201204,
-            "tendencia": "Dentro da m\u00e9dia hist\u00f3rica"
+            "predicted_mm": 103.93396926245426,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 371.9503440287126,
+            "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
         },
         {
             "date": "2019-04-01T00:00:00",
-            "predicted_mm": 97.06394119749463,
+            "predicted_mm": 49.97988229059902,
             "conf_int_lower": 0.0,
-            "conf_int_upper": 275.43270779377286,
+            "conf_int_upper": 346.6398044238466,
             "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
         },
         {
             "date": "2019-05-01T00:00:00",
-            "predicted_mm": 143.9268716487489,
+            "predicted_mm": 65.16536113838512,
             "conf_int_lower": 0.0,
-            "conf_int_upper": 322.7275687810627,
-            "tendencia": "Dentro da m\u00e9dia hist\u00f3rica"
+            "conf_int_upper": 391.9972141896218,
+            "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
         },
         {
             "date": "2019-06-01T00:00:00",
-            "predicted_mm": 73.3882235023804,
+            "predicted_mm": 30.977755159528797,
             "conf_int_lower": 0.0,
-            "conf_int_upper": 252.61980638629063,
+            "conf_int_upper": 383.61834860861785,
             "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
         },
         {
             "date": "2019-07-01T00:00:00",
-            "predicted_mm": 58.986484048170766,
+            "predicted_mm": 73.70932020733377,
             "conf_int_lower": 0.0,
-            "conf_int_upper": 238.6479191903898,
+            "conf_int_upper": 451.1895665910106,
             "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
         },
         {
             "date": "2019-08-01T00:00:00",
-            "predicted_mm": 82.18101449170331,
+            "predicted_mm": 105.17704052727613,
             "conf_int_lower": 0.0,
-            "conf_int_upper": 262.2712758908987,
+            "conf_int_upper": 505.6030759845872,
             "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
         },
         {
             "date": "2019-09-01T00:00:00",
-            "predicted_mm": 125.61314790552628,
+            "predicted_mm": 108.06958771337844,
             "conf_int_lower": 0.0,
-            "conf_int_upper": 306.13121687447835,
+            "conf_int_upper": 530.3581326595295,
             "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
         },
         {
             "date": "2019-10-01T00:00:00",
-            "predicted_mm": 127.12590610654036,
+            "predicted_mm": 66.75864895323258,
             "conf_int_lower": 0.0,
-            "conf_int_upper": 308.0707711835235,
-            "tendencia": "Dentro da m\u00e9dia hist\u00f3rica"
+            "conf_int_upper": 509.75525152151346,
+            "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
         },
         {
             "date": "2019-11-01T00:00:00",
-            "predicted_mm": 84.6383790322939,
+            "predicted_mm": 58.91747335687528,
             "conf_int_lower": 0.0,
-            "conf_int_upper": 266.00903589601023,
+            "conf_int_upper": 521.7383671514125,
             "tendencia": "Abaixo da m\u00e9dia hist\u00f3rica"
         },
         {
             "date": "2019-12-01T00:00:00",
-            "predicted_mm": 185.47225467925057,
-            "conf_int_lower": 3.6768032932925223,
-            "conf_int_upper": 367.2677060652086,
+            "predicted_mm": 111.12141017746535,
+            "conf_int_lower": 0.0,
+            "conf_int_upper": 592.9160725329614,
             "tendencia": "Dentro da m\u00e9dia hist\u00f3rica"
         }
     ],
-    "generated_at": "2025-10-13T20:38:11.278592"
+    "generated_at": "2025-10-13T20:16:06.387465"
 }

@@ -2,9 +2,8 @@
 import { ref, onMounted, watch, computed } from 'vue';
 import GraficoAcumuladoAnual from './GraphAcumuladoAnual.vue';
 import GraficoAcumuladoMensal from './GraphAcumuladoMensal.vue';
-// import GraficoPrevisao from './GraphPrevisao.vue';
+import GraficoPrevisao from './GraphPrevisao.vue';
 
-// --- Estado da Aplicação ---
 const isLoading = ref(true);
 const error = ref(null);
 const availableCities = ref([]);
@@ -73,7 +72,7 @@ async function fetchAllDataForCity(city) {
     }
 }
 
-// --- Computed Properties para os Cards de Insight ---
+// Cards de insight
 const kpiRainiestDay = computed(() => {
     return cityData.value.extremes?.dia_mais_chuvoso || { data: 'N/D', precipitacao_mm: 'N/D' };
 });
@@ -92,7 +91,7 @@ const kpiYearlyStats = computed(() => {
 });
 
 
-// --- Hooks de Ciclo de Vida ---
+// Hooks 
 onMounted(async () => {
     await fetchCities();
 });
@@ -117,7 +116,7 @@ watch(selectedCity, (newCity) => {
         </div>
 
         <div v-else class="dashboard-wrapper">
-            <h1 class="dashboard-title mb-4">Dashboard de Análise Pluviométrica</h1>
+            <h1 class="dashboard-title mb-4">Dashboard</h1>
 
             <div class="row mb-4">
                 <div class="col-md-6 offset-md-3">
@@ -208,7 +207,6 @@ watch(selectedCity, (newCity) => {
 </template>
 
 <style scoped>
-/* Você pode reutilizar os estilos do seu arquivo original aqui, eles são ótimos! */
 .dashboard-container {
     padding: 2rem;
     background-color: #f8f9fa;
@@ -260,7 +258,6 @@ watch(selectedCity, (newCity) => {
 .card {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    min-height: 450px;
     display: flex;
     flex-direction: column;
 }

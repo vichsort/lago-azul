@@ -1,7 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 
-// --- Estado do Componente ---
 const isLoadingCities = ref(true);
 const isGeneratingForecast = ref(false);
 const error = ref(null);
@@ -11,7 +10,6 @@ const forecastResult = ref(null); // Para armazenar a resposta da API
 
 const API_BASE_URL = 'http://127.0.0.1:5000/api/v1';
 
-// --- Funções ---
 
 // Busca a lista de cidades para popular o dropdown
 async function fetchCities() {
@@ -93,11 +91,15 @@ onMounted(fetchCities);
             </div>
 
             <div class="result-area">
+                <!-- Aqui eu fiquei com grandes dúvidas de como faria para deixar o usuário
+                     por maior tempo intrigado na tela de espera. Uma loading bar? Mas como
+                     usando somente um POST não temos garantia da duração, estipulei um minuto
+                     que com certeza é suficiente pra manter entretido...                     -->
                 <div v-if="isGeneratingForecast" class="status-card text-center">
                     <div class="spinner-border text-primary" role="status"></div>
                     <p class="mt-3">
                         <strong>Gerando previsão para {{ selectedCity }}...</strong><br>
-                        Este processo pode levar até um minuto. O modelo `auto_arima` está trabalhando.
+                        Este processo pode levar até um minuto.
                     </p>
                 </div>
 

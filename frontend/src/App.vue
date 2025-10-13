@@ -13,7 +13,7 @@ export default {
     <nav>
       <div class="links">
         <router-link to="/">Início</router-link>
-        <router-link to="/builder">Builder</router-link>
+        <router-link to="/forecast">Gerador de previsões</router-link>
       </div>
     </nav>
 
