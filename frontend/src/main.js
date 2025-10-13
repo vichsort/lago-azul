@@ -6,7 +6,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import App from './App.vue';
 
 import HomePage from './components/DashboardPage.vue'; 
-import ForecastBuilder from '../components/ForecastBuilder.vue' 
+import ForecastBuilder from './components/ForecastBuilder.vue' 
 
 const routes = [
   { path: '/', component: HomePage }, 

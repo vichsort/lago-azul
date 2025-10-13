@@ -2,6 +2,7 @@ import os
 import click
 from flask import Flask
 from config import Config
+from flask_cors import CORS
 from sqlalchemy.dialects.postgresql import insert as pg_insert
 from app.services import forecast_service
 import matplotlib.pyplot as plt
@@ -18,6 +19,10 @@ def create_app(config_class=Config):
     """
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_object(config_class)
+    
+    # correção para aceitar req. do vue para a api via CORS
+    CORS(app, resources={r"/api/*": {"origins": "http://localhost:5173"}})
+    
     db.init_app(app)
     migrate.init_app(app, db)
 
