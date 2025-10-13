@@ -180,6 +180,10 @@ npm run dev
 
 Para rodar a aplicação. Simples assim, o sistema estará rodando em `http://localhost:5173/`. Abrir o navegador neste endereço irá lhe direcionar ao dashboard de análise pluviométrica. 
 
+### 5\. Via executável
+
+Uma vez que o sistema foi instalado corretamente no backend e no frontend, você pode utilizar o aquivo executável `start.bat` para automaizar a tarefa de iniciação de ambos os ends do sistema. Basta dar dois cliques sobre o sistema que o mesmo executará em segundo plano e abrirá o seu navegador com o endereço esperado do dashboard.
+
 
 ## 📋 Documentação da API
 
