@@ -3,10 +3,7 @@ import { ref } from 'vue';
 
 
 const developers = ref([
-    'Gabriel Moura Jappe',
-    'Gustavo Schwitzki Peretti',
     'Vitor Marcelo Mignoni',
-    'Heitor Scalco Neto'
 ]);
 
 const currentYear = new Date().getFullYear();
@@ -19,19 +16,15 @@ const currentYear = new Date().getFullYear();
                 <h4 class="footer-title">Realização</h4>
                 <div class="logo-wrapper">
                     <div class="logo-placeholder">
-                        <img src="../assets/ita.png">
-                        <p>Consórcio Itá</p>
+                        <img src="../assets/lagoazu.png">
+                        <p>Grupo Lago Azul</p>
                     </div>
 
-                    <div class="logo-placeholder">
-                        <img src="../assets/ifc_white.png">
-                        <p>Instituto Federal Catarinense</p>
-                    </div>
                 </div>
             </div>
 
             <div class="footer-section devs-section">
-                <h4 class="footer-title">Desenvolvedores</h4>
+                <h4 class="footer-title">Desenvolvedor</h4>
                 <ul class="dev-list">
                     <li v-for="dev in developers" :key="dev">{{ dev }}</li>
                 </ul>
