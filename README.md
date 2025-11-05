@@ -4,36 +4,35 @@ Este projeto é uma API backend completa para a ingestão, armazenamento, análi
 
 ## 📜 Índice
 
-  - [Funcionalidades Principais](#-funcionalidades-principais)
-  - [Tecnologias Utilizadas](#️-tecnologias-utilizadas)
-  - [Estrutura do Projeto](#estrutura-do-projeto)
-  - [Configuração e Execução Local](#-configuração-e-execução-local)
-  - [Utilização da Aplicação](#️-utilização-da-aplicação)
-  - [Documentação da API](#-documentação-da-api)
-  - [Modelo de Previsão](#-modelo-de-previsão)
-  - [Possíveis Melhorias Futuras](#-possíveis-melhorias-futuras)
+- [Funcionalidades Principais](#-funcionalidades-principais)
+- [Tecnologias Utilizadas](#️-tecnologias-utilizadas)
+- [Configuração e Execução Local](#-configuração-e-execução-local)
+- [Utilização da Aplicação](#️-utilização-da-aplicação)
+- [Documentação da API](#-documentação-da-api)
+- [Modelo de Previsão](#-modelo-de-previsão)
+- [Possíveis Melhorias Futuras](#-possíveis-melhorias-futuras)
 
 ## ✨ Funcionalidades Principais
 
-  * **Ingestão de Dados em Lote:** Processa múltiplos arquivos CSV de dados meteorológicos do INMET de uma só vez.
-  * **Armazenamento Robusto:** Persiste os dados tratados em um banco de dados PostgreSQL, com um esquema versionado através de migrações.
-  * **API RESTful Completa:** Expõe endpoints claros e organizados para consultar dados brutos, estatísticas agregadas e previsões.
-  * **Modelo de Previsão Estatística:** Gera previsões de precipitação para os próximos 12 meses para qualquer localidade com dados suficientes.
-  * **Sistema de Cache Inteligente:** Armazena as previsões geradas para evitar reprocessamento computacionalmente caro, com tempo de vida configurável.
+- **Ingestão de Dados em Lote:** Processa múltiplos arquivos CSV de dados meteorológicos do INMET de uma só vez.
+- **Armazenamento Robusto:** Persiste os dados tratados em um banco de dados PostgreSQL, com um esquema versionado através de migrações.
+- **API RESTful Completa:** Expõe endpoints claros e organizados para consultar dados brutos, estatísticas agregadas e previsões.
+- **Modelo de Previsão Estatística:** Gera previsões de precipitação para os próximos 12 meses para qualquer localidade com dados suficientes.
+- **Sistema de Cache Inteligente:** Armazena as previsões geradas para evitar reprocessamento computacionalmente caro, com tempo de vida configurável.
 
 ## 🛠️ Tecnologias Utilizadas
 
-  * **Backend:** Python 3.11+, Flask
-  * **Frontend:** Vue.js 3.5+, D3.js 
-  * **Banco de Dados:** PostgreSQL
-  * **ORM e Migrações:** Flask-SQLAlchemy, Flask-Migrate (Alembic)
-  * **Manipulação de Dados:** Pandas, NumPy
-  * **Modelo Estatístico:** Statsmodels, Pmdarima (auto\_arima) (SARIMA)
-  * **Ambiente e Dependências:** Python venv, Pip
+- **Backend:** Python 3.11+, Flask
+- **Frontend:** Vue.js 3.5+, D3.js
+- **Banco de Dados:** PostgreSQL
+- **ORM e Migrações:** Flask-SQLAlchemy, Flask-Migrate (Alembic)
+- **Manipulação de Dados:** Pandas, NumPy
+- **Modelo Estatístico:** Statsmodels, Pmdarima (auto\_arima) (SARIMA)
+- **Ambiente e Dependências:** Python venv, Pip
 
 ## 📁 Estrutura do Projeto
 
-```
+```text
 /
 |-- app/                    # Módulo principal da aplicação Flask
 |   |-- api/                # Blueprint da API (rotas)
@@ -62,9 +61,9 @@ Siga os passos abaixo para configurar e executar o projeto em seu ambiente de de
 
 ### 1\. Pré-requisitos
 
-  * [Python 3.10+](https://www.python.org/)
-  * [PostgreSQL](https://www.postgresql.org/download/) instalado e rodando.
-  * [Git](https://git-scm.com/)
+- [Python 3.10+](https://www.python.org/)
+- [PostgreSQL](https://www.postgresql.org/download/) instalado e rodando.
+- [Git](https://git-scm.com/)
 
 ### 2\. Clonar o Repositório
 
@@ -88,6 +87,9 @@ CREATE DATABASE pluviometric_data;
 a. **Crie o arquivo de variáveis de ambiente** copiando o template:
 
 ```bash
+# Entrar na pasta do backend
+cd backend
+
 # No Windows
 copy .env.example .env
 
@@ -109,8 +111,6 @@ DB_NAME="pluviometric_data"
 c. **Crie e ative o ambiente virtual:**
 
 ```bash
-# Entrar na pasta do backend
-cd backend
 
 # Criar o ambiente
 python -m venv .venv
@@ -187,12 +187,11 @@ Para instalar as dependências do sistema, e
 npm run dev
 ```
 
-Para rodar a aplicação. Simples assim, o sistema estará rodando em `http://localhost:5173/`. Abrir o navegador neste endereço irá lhe direcionar ao dashboard de análise pluviométrica. 
+Para rodar a aplicação. Simples assim, o sistema estará rodando em `http://localhost:5173/`. Abrir o navegador neste endereço irá lhe direcionar ao dashboard de análise pluviométrica.
 
 ### 5\. Via executável
 
 Uma vez que o sistema foi instalado corretamente no backend e no frontend, você pode utilizar o aquivo executável `start.bat` para automaizar a tarefa de iniciação de ambos os ends do sistema. Basta dar dois cliques sobre o sistema que o mesmo executará em segundo plano e abrirá o seu navegador com o endereço esperado do dashboard.
-
 
 ## 📋 Documentação da API
 
@@ -215,20 +214,20 @@ Para a tarefa de prever tendências de chuva, foi escolhido um modelo estatísti
 
 A escolha foi motivada pelos seguintes fatores:
 
-1.  **Adequação aos Dados:** Dados pluviométricos possuem uma forte **sazonalidade** (padrões que se repetem anualmente). O componente "S" (Seasonal) do SARIMA foi projetado especificamente para capturar e modelar esses ciclos, tornando-o ideal para o problema.
+1. **Adequação aos Dados:** Dados pluviométricos possuem uma forte **sazonalidade** (padrões que se repetem anualmente). O componente "S" (Seasonal) do SARIMA foi projetado especificamente para capturar e modelar esses ciclos, tornando-o ideal para o problema.
 
-2.  **Interpretabilidade:** Diferente de modelos complexos de Machine Learning (como redes neurais), o SARIMA é um modelo aberto e auto-explicativo. Seus parâmetros e resultados são estatisticamente interpretáveis, o que nos permite entender *como* o modelo está chegando a uma conclusão e facilita o debugging.
+2. **Interpretabilidade:** Diferente de modelos complexos de Machine Learning (como redes neurais), o SARIMA é um modelo aberto e auto-explicativo. Seus parâmetros e resultados são estatisticamente interpretáveis, o que nos permite entender *como* o modelo está chegando a uma conclusão e facilita o debugging.
 
-3.  **Eficiência com Dados Limitados:** O SARIMA consegue extrair padrões significativos de séries temporais com alguns anos de dados, sem a necessidade de volumes massivos de informação ou de múltiplas variáveis (features) que modelos de ML mais complexos exigiriam.
+3. **Eficiência com Dados Limitados:** O SARIMA consegue extrair padrões significativos de séries temporais com alguns anos de dados, sem a necessidade de volumes massivos de informação ou de múltiplas variáveis (features) que modelos de ML mais complexos exigiriam.
 
-4.  **Automação com `auto_arima`:** A biblioteca `pmdarima` oferece a funcionalidade `auto_arima`, que automatiza o processo complexo de encontrar os melhores parâmetros (p,d,q)(P,D,Q) para o modelo. Isso torna a implementação robusta e acessível, mesmo sem um conhecimento profundo em econometria.
+4. **Automação com `auto_arima`:** A biblioteca `pmdarima` oferece a funcionalidade `auto_arima`, que automatiza o processo complexo de encontrar os melhores parâmetros (p,d,q)(P,D,Q) para o modelo. Isso torna a implementação robusta e acessível, mesmo sem um conhecimento profundo em econometria.
 
 Em resumo, o SARIMA foi a escolha pragmática e eficaz, oferecendo um excelente equilíbrio entre performance preditiva, interpretabilidade e simplicidade de implementação para este cenário.
 
 ## 🔮 Possíveis Melhorias Futuras
 
-  - **Workers em Segundo Plano:** Mover a geração da previsão (tarefa lenta) para uma fila de tarefas com um worker em segundo plano (usando Celery ou RQ) para que o endpoint `POST` retorne uma resposta imediata.
-  - **Dashboard Frontend:** Construir a interface do usuário (em React, Vue ou Streamlit) para consumir a API e visualizar os dados.
-  - **Autenticação de API:** Implementar um sistema de chaves de API para proteger os endpoints.
-  - **Containerização:** Empacotar a aplicação e o banco de dados em contêineres Docker para facilitar o deploy e garantir a reprodutibilidade do ambiente.
-  - **Testes Automatizados:** Adicionar testes unitários e de integração para garantir a confiabilidade do código.
+- **Workers em Segundo Plano:** Mover a geração da previsão (tarefa lenta) para uma fila de tarefas com um worker em segundo plano (usando Celery ou RQ) para que o endpoint `POST` retorne uma resposta imediata.
+- **Dashboard Frontend:** Construir a interface do usuário (em React, Vue ou Streamlit) para consumir a API e visualizar os dados.
+- **Autenticação de API:** Implementar um sistema de chaves de API para proteger os endpoints.
+- **Containerização:** Empacotar a aplicação e o banco de dados em contêineres Docker para facilitar o deploy e garantir a reprodutibilidade do ambiente.
+- **Testes Automatizados:** Adicionar testes unitários e de integração para garantir a confiabilidade do código.
